@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbwP8LBhCYef4MRKF-pwOdl-xEXlFDJ8csnGXieIr53uraJUNzsA6yzzr3nllkeNa3Hjuw/exec">
+    <title>Redirecting...</title>
+    <script>
+      var forms = [
+        "https://docs.google.com/forms/d/e/1FAIpQLSeOAPnkNwr-UFT7ETrh6pY3owyXJO9-TFWgncExl8b5M-l5JQ/viewform?usp=header",
+        "https://docs.google.com/forms/d/e/1FAIpQLSdhqNOuFs3HkCz6X8etKD4G9iYxPXTRwB5GSfh5p_MrsGXMXw/viewform?usp=header",
+        "https://docs.google.com/forms/d/e/1FAIpQLSfp6CXTZ2u6v0iBtMTr4ku0nMVytloK7t9UqikQrBXdBMm0GQ/viewform?usp=header",
+        "https://docs.google.com/forms/d/e/1FAIpQLSd_dlEsIt4DDrBka6ZR8isFXpwbX7xstGcEIz1mHG9jrf0pVw/viewform?usp=header"
+      ];
+      var random = forms[Math.floor(Math.random() * forms.length)];
+      window.location.replace(random);
+    </script>
   </head>
   <body>
     <p>Redirecting you to the survey...</p>
