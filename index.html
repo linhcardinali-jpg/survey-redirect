@@ -18,8 +18,7 @@
         "https://docs.google.com/forms/d/e/1FAIpQLSfp6CXTZ2u6v0iBtMTr4ku0nMVytloK7t9UqikQrBXdBMm0GQ/viewform?usp=header",
         "https://docs.google.com/forms/d/e/1FAIpQLSd_dlEsIt4DDrBka6ZR8isFXpwbX7xstGcEIz1mHG9jrf0pVw/viewform?usp=header"
       ];
-      var random = forms[Math.floor(Math.random() * forms.length)];
-      document.getElementById("surveyBtn").href = random;
+      var seed = Date.now() + Math.random() * 1000;
+      var index = Math.floor((seed % 1000) / 1000 * forms.length);
+      document.getElementById("surveyBtn").href = forms[index];
     </script>
-  </body>
-</html>
