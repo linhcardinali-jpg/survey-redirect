@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Redirecting...</title>
+    <title>Survey</title>
+  </head>
+  <body style="display:flex; justify-content:center; align-items:center; height:100vh; margin:0; font-family:sans-serif;">
+    <div style="text-align:center;">
+      <p style="font-size:18px; margin-bottom:20px;">Tap below to go to the survey!</p>
+      <a id="surveyBtn" href="#" 
+        style="background:#405DE6; color:white; padding:16px 32px; border-radius:25px; text-decoration:none; font-size:16px;">
+        Take the Survey
+      </a>
+    </div>
     <script>
       var forms = [
         "https://docs.google.com/forms/d/e/1FAIpQLSeOAPnkNwr-UFT7ETrh6pY3owyXJO9-TFWgncExl8b5M-l5JQ/viewform?usp=header",
@@ -10,10 +19,7 @@
         "https://docs.google.com/forms/d/e/1FAIpQLSd_dlEsIt4DDrBka6ZR8isFXpwbX7xstGcEIz1mHG9jrf0pVw/viewform?usp=header"
       ];
       var random = forms[Math.floor(Math.random() * forms.length)];
-      window.location.replace(random);
+      document.getElementById("surveyBtn").href = random;
     </script>
-  </head>
-  <body>
-    <p>Redirecting you to the survey...</p>
   </body>
 </html>
